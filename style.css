@@ -1,0 +1,58 @@
+body{
+
+    direction: rtl;
+    background-color: #f5f5f5;
+    
+    font-size: 20px;
+    
+}
+.container{
+    margin: 0px auto;
+    max-width: 700px;
+    text-align: center;
+}
+ul{
+text-align: right;
+display: inline-block;
+list-style-type: none;
+padding-left: 0px;
+
+}
+.menu li{
+
+    float: right;
+    padding: 0.65em 1em;
+    border: 1px solid #eee;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    position: relative;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 1px;
+
+}
+.menu li:hover{
+
+    background-color: #ec407a;
+    color: #fff;
+}
+
+li ul{
+
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    z-index: 1;
+    width: 150px;
+    display: none;
+}
+li ul li{
+    width: 100%;
+}
+li:hover ul{
+
+    display: block;
+}
+
+
